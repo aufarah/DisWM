@@ -1,21 +1,31 @@
-torch==1.8.1
-numpy==1.23.0
-torchvision==0.9.1
-tensorboard==2.18.0
-pandas==1.4.4
-matplotlib==3.4.1
-ruamel.yaml==0.17.4
+# Core numerical & ML libraries
+numpy==1.23.5
+scipy==1.13.1
+
+# Deep Learning frameworks
+torch
+torchvision
+tensorboard==2.11.2
+tensorflow==2.11.0
+protobuf==3.19.6
+
+# RL & Environment suites
 gym==0.25.2
-moviepy==1.0.3
-einops==0.3.0
-dm_control==1.0.21
-wandb
-pillow
-tensorflow==2.18.0
 gymnasium==1.0.0
-mujoco==3.2.0 # for dmc2gym
-# mujoco==3.2.3 # for drawerworld
+mujoco==3.2.0
+dm_control==1.0.21.post1
+panda-gym==3.0.7
 mujoco-py==2.1.2.14
 
+# Utilities & Logging
+pandas==1.4.4
+matplotlib==3.4.1
+moviepy==1.0.3
+einops==0.3.0
+ruamel.yaml==0.17.4
+wandb==0.13.5
+pillow
+opencv-python==4.8.1.78
 
-
+# Build tools
+setuptools<74
