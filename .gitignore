@@ -177,3 +177,7 @@ cython_debug/
 bin
 lib
 lib64
+datadir
+logdir
+checkpoints
+*.tar.xz

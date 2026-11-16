@@ -520,7 +520,7 @@ if __name__ == '__main__':
     name = (parser.parse_args(remaining).task + '-pretrain-seed_'
             + str(parser.parse_args(remaining).seed) + '-' + str(timestamp))
     print(name)
-    wandb.require("core")
+    # wandb.require("core")
     wandb.init(
       project="Diswm_pretrain",
       config=configs
@@ -534,7 +534,7 @@ if __name__ == '__main__':
     timestamp = datetime.now().timestamp()
     name = (parser.parse_args(remaining).task + '-' + parser.parse_args(remaining).method_name
             + '-seed_' + str(parser.parse_args(remaining).seed) + '-' + str(timestamp))
-    wandb.require("core")
+    # wandb.require("core")
     wandb.init(
       project="Diswm",
       name=name,
